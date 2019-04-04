@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Générateur de citation</title>
+
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- Nav -->
+  <nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand float-left offset-lg-1 col-lg-1" href="#">Le générateur</a>
+
+    <ul class="nav col-lg-2 offset-lg-1">
+      <li class="nav-item">
+        <a class="nav-link" href="https://github.com/8Thomas8/DAF-P5/tree/master/Partie%202" target="_blank">Voir le code</a>
+      </li>
+    </ul>
+  </nav>
+  <!-- Page content -->
+  <div id="content" class="container">
+    <div class="row justify-content-center">
+      <h1 id="title">Générateur de citation</h1>
+    </div>
+
+    <div class="row justify-content-center">
+      <select name="quoteNumber" id="quoteNumber">
+        <option value="0">Nombre</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+
+      <select name="quoteLang" id="quoteLang">
+        <option value="0">Langue</option>
+        <option value="FR">Français</option>
+        <option value="EN">Anglais</option>
+      </select>
+
+      <button id="button1" type="button" class="btn btn-primary">Générer de nouvelles citations</button>
+    </div>
+
+    <div class="row justify-content-center" id="regen">
+      <button id="button2" type="button" class="btn btn-primary">Générer la même chose</button>
+      <button id="button3" type="button" class="btn btn-danger">Réinitialiser le programme</button>
+    </div>
+
+    <div class="row justify-content-center">
+      <div id="responseArea">
+        <!-- Display the quote -->
+        <ul id="quote"></ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="navbar navbar-dark bg-dark fixed-bottom">
+    <div class="offset-lg-1 col-lg-2">
+      <p>©2018 - Rousseau Thomas</p>
+    </div>
+    <div class="offset-lg-6 col-lg-2 offset-lg-1">
+      <p>Projet OpenClassrooms</p>
+    </div>
+  </footer>
+
+  <!-- Call JS script -->
+  <script src="js/citations.js"></script>
+</body>
+
+</html>
